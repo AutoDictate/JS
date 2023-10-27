@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="addH1()">
+        Add
+    </button>
+    <button onclick="del()">Remove</button>
+    <div id ="result"></div>
+</body>
+</html>
+
+<script>
+
+    var div = document.getElementById("result")
+
+    function addH1(){
+        var list = document.createElement("h1")
+        list.innerText = "Surya"
+        div.append(list)
+    }
+    function del() {
+        var h1Elements = div.querySelectorAll("h1")
+        if (h1Elements.length > 0) {
+            div.removeChild(h1Elements[h1Elements.length - 1])
+        }
+    }
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Creation and ClassList add</title>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+</body>
+</html>
+
+<style>
+    .para{
+        background: red;
+        color: black;
+    }
+    #paraText{
+        width: 100%;
+        margin: 0;
+        height: 100%;
+    }
+</style>
+
+
+<script>
+    
+    const n1 = document.createElement("h1")
+    n1.classList.add("para")
+    n1.setAttribute("id", "paraText")
+    n1.textContent = "Surya is a Good Boy"
+
+    const box  = document.getElementById("box")
+    box.appendChild(n1)
+
+</script>
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="in">
+        <button onclick="change()" id="Btn">click</button>
+    </div>
+    <div>
+        <h1 id="text-area"></h1>
+    </div>
+</body>
+</html>
+
+<script>
+    const input = document.getElementById("in")
+    const text = document.getElementById("text-area")
+    
+    input.addEventListener("keypress",(event) =>{
+        if(event.key === "Enter"){
+            event.preventDefault()
+            document.getElementById("Btn").click()
+            text.innerText = input.value
+        }
+    })
+
+    function change(){
+        text.innerText = input.value
+    }
+</script>
+

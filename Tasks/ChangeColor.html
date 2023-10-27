@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="result">
+        <h1 id="disp">Name</h1>
+    </div>
+    <div>
+        <button id="n1">Surya</button>
+        <button id="n2">Akash</button>
+        <button id="n3">Naresh</button>
+    </div>
+</body>
+</html>
+
+<script>
+    const display = document.getElementById("disp")
+    const n1 = document.getElementById("n1")
+    const n2 = document.getElementById("n2")
+    const n3 = document.getElementById("n3")
+
+
+    n1.onclick = () =>{
+        display.innerText = n1.textContent
+    }
+    n2.onclick = () =>{
+        display.innerText = n2.textContent
+    }
+    n3.onclick = () =>{
+        display.innerText = n3.textContent
+    }
+
+</script>
