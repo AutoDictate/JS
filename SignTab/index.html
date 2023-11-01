@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp Page</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="form signup-box">
@@ -12,19 +13,21 @@
             <h1>SIGNUP</h1>
             <p>Get ready for an Adventure !!</p>
         </div>
+        <form name="myform" method="post" target="#">
         <div class="labels tabs">
             <label for="fname">First Name</label>
-            <input type="text" class="fname" required>
+            <input name="frname" type="text"  placeholder="Your first name" class="fname">
             <label for="lname">Last Name</label>
-            <input type="text" class="lname" required>
+            <input name="laname" type="text" required placeholder="Your last name" class="lname">
             <label for="email">E-mail id</label>
-            <input type="text" class="email" required>
+            <input name="Email" type="text" required placeholder="Email-id" class="email">
             <label for="password">Password</label>
-            <input type="password" class="password" required>
+            <input name="pass" onkeyup="passCheck()" type="password" required placeholder="Enter Your Password" class="password">
         </div>
         <div class="button">
-            <button type="button">Sign Up</button>
+            <button onclick="passValidate()">Sign Up</button>
         </div>
+        </form>
         <div class="login">
             <p>Already have an account ? <a href="#">Let's Ride</a></p>
         </div>

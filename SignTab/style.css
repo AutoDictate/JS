@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "poppins", sans-serif;
 }
 
 body{
@@ -11,7 +12,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     color: #F6F1EE;
-    font-family: "poppins", sans-serif;
     font-weight: 300;
 }
 
@@ -19,7 +19,8 @@ body{
     background: #363062ad;
     width: 500px;
     height: 500px;
-    margin: 100px auto;
+    margin: auto;
+    margin-top: 80px;
     border-radius: 5px;
     box-shadow: black 0px 20px 50px;
 }
@@ -45,18 +46,18 @@ body{
 }
 
 label{
-    font-weight: 400;
+    font-weight: 500;
     padding-bottom: 3px;
     padding-top: 7px;
 }
 input{
     width: 85%;
-    opacity: 0.9;
+    /* opacity: 0.9; */
     border-radius: 3px;
     border-style: none;
     height: 30px;
     padding-left: 5px;
-    font-size: 16px;
+    font-size: 10px;
 }
 
 .button{
@@ -79,6 +80,8 @@ input{
 }
 
 .button button:hover{
+    color: white;
+    background: #363062ad;
     box-shadow:  #fff 0px 0px 10px;
 }
 
@@ -95,6 +98,5 @@ input{
 }
 .login a:hover{
     text-decoration: underline;
-    
     text-shadow:  #ffe600ad 3px 0px 10px;
 }
