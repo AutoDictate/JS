@@ -1,6 +1,6 @@
 // Factory Functions
 
-function createPerson(name){
+function createPerson(name){    // Camel Case : myName
 
     return {
         name,
