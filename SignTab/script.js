@@ -33,8 +33,13 @@ function passValidate() {
             }
         }
     }
-    console.log(p);
-    if(p!=4){
+    if(document.querySelector(".fname").value == "" || document.querySelector(".fname").value == null){
+        alert("Please fill out the Form");
+    }
+    else if(pass==""){
+        alert("Please fill up the Password")
+    }
+    else if(p!=4){
         alert ("Use some strong passwords");
     }else{
         alert("You have Successfully Signed Up");
