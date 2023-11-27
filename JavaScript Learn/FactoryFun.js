@@ -1,11 +1,10 @@
 // Factory Functions
 
-function createPerson(name){    // Camel Case : myName
+const createPerson=(name)=>{    // Camel Case : myName
 
     return {
-        name,
         greeting(){
-            let msg = `My name is ${this.name}`;
+            let msg = `My name is ${name}`;
             console.log(msg);
         }
     };
@@ -13,5 +12,5 @@ function createPerson(name){    // Camel Case : myName
 
 let surya = createPerson("Surya");
 let single = createPerson("Single");
-surya.greeting()
-single.greeting()
+surya.greeting();
+single.greeting();

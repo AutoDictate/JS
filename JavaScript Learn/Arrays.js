@@ -1,6 +1,8 @@
 let anime = ["One piece", "Naruto", "demon Slayer"];
 
 anime.push("Attack on Titan");
+anime.pop();
+anime.shift();
 
 for (const i in anime) {
     console.log(anime[i]);
