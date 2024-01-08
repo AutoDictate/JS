@@ -38,4 +38,4 @@ const mt = [
     [7,8,9]
 ]
 
-console.log(mt.flat());
+console.log(mt.flat(1));
